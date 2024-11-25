@@ -3,7 +3,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import useSWR from "swr";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../components/ui/button";
 import { ArrowLeft, ChevronRight, Eye, FilterIcon, GraduationCap, NotebookText, Phone } from "lucide-react";
 import {
   Dialog,
@@ -11,7 +11,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog";
+} from "../../components/ui/dialog";
 import {
   Card,
   CardDescription,
@@ -29,7 +29,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer"
+} from "../../components/ui/drawer"
 
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
