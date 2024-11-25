@@ -4,7 +4,7 @@ import ChatInfo from "./components/ChatInfo";
 import Faq from "./components/Faq";
 import Hero from "./components/Hero";
 import Why from "./components/Why";
-
+import Partners from '@/components/Partners';
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -12,6 +12,7 @@ export default function Home() {
       <Why/>
       <ChatInfo/>
       <Articles/>
+      <Partners/>
       <Faq/>
       
     </div>

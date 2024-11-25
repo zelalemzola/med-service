@@ -25,13 +25,17 @@
     "lucide-react": "^0.460.0",
     "mongodb": "^6.11.0",
     "mongoose": "^8.8.2",
-    "next": "15.0.3",
+    "next": "14.2.18",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "swr": "^2.2.5",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^1.1.1"
+  },
+  "overrides": {
+    "react": "$react",
+    "react-dom": "$react-dom"
   },
   "devDependencies": {
     "@types/node": "^20",
