@@ -1,5 +1,7 @@
 
+import Articles from "./components/Articles";
 import ChatInfo from "./components/ChatInfo";
+import Faq from "./components/Faq";
 import Hero from "./components/Hero";
 import Why from "./components/Why";
 
@@ -9,6 +11,9 @@ export default function Home() {
       <Hero/>
       <Why/>
       <ChatInfo/>
+      <Articles/>
+      <Faq/>
+      
     </div>
   );
 }

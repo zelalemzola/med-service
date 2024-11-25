@@ -122,14 +122,14 @@ const Workers = () => {
 
   return (
     <div className="w-full mx-auto mt-[20px] flex flex-col ">
-      <div className="w-full flex flex-wrap items-center justify-between fixed top-0 z-30 bg-white border-b rounded-b-2xl px-[4%] md:px-[10%] py-3 shadow-md">
+      <div className="w-full flex flex-wrap items-center justify-between fixed top-15 z-30 bg-white border-b rounded-b-2xl px-[4%] md:px-[10%] py-3 shadow-md">
       <Link href='/'><ArrowLeft fontWeight='bold' size={33} className="text-white bg-primary font-bold p-1 rounded-full md:scale-200 cursor-pointer" /></Link>
         <p className="text-primary text-lg md:text-2xl font-bold  items-center gap-3 flex flex-col md:flex-row">Available Physicians: <span className="text-primary">({maidsCount})</span></p>
         <Dialog >
           <DialogTrigger>
             <Button className="flex items-center gap-3 bg-primary hover:bg-primary">Filter <FilterIcon className='hidden md:block'/></Button>
           </DialogTrigger>
-          <DialogContent className="px-2 w-[96%] md:w-fit rounded-xl">
+          <DialogContent className=" w-[96%] md:w-fit rounded-xl px-6">
             <DialogHeader className="mx-auto">
               <DialogTitle className='text-primary text-lg'>Apply filters</DialogTitle>
             </DialogHeader>
@@ -146,7 +146,7 @@ const Workers = () => {
                   </option>
                 ))}
               </select>
-              <div className="flex flex-col  gap-3 py-2 ">
+              {/* <div className="flex flex-col  gap-3 py-2 ">
                 <label className="text-black">Filter by Price/Month:</label>
                 <div className="flex items-center space-x-2 flex-col md:flex-row  gap-y-2">
                   <input
@@ -165,8 +165,8 @@ const Workers = () => {
                     className="border p-1 rounded text-black"
                   />
                 </div>
-              </div>
-              <div className="flex flex-col  gap-3 py-2 ">
+              </div> */}
+              {/* <div className="flex flex-col  gap-3 py-2 ">
                 <label className="text-black">Filter by Price/Hour:</label>
                 <div className="flex items-center space-x-2 flex-col md:flex-row  gap-y-2">
                   <input
@@ -185,8 +185,8 @@ const Workers = () => {
                     className="border p-1 rounded text-black"
                   />
                 </div>
-              </div>
-              <div className="w-full flex items-center">
+              </div> */}
+              <div className="w-full flex items-center pt-5">
                 <Button onClick={clearFilters} variant="destructive" className="mx-auto">
                   Clear Filters
                 </Button>
@@ -213,8 +213,8 @@ const Workers = () => {
                 <h2 className="card-title text-primary font-bold text-[14px] md:text-[20px] text-white">{maid.name}</h2>
               </CardTitle>
               <CardDescription>
-                <span className="text-primary text-[12px] first-line:md:text-[18px] text-white">Price:</span>
-                <span className="ml-1 text-white">${maid.pricePerMonth}/Month</span>
+                {/* <span className="text-primary text-[12px] first-line:md:text-[18px] text-white">Price:</span>
+                <span className="ml-1 text-white">${maid.pricePerMonth}/Month</span> */}
               </CardDescription>
             </CardHeader>
             <CardFooter className="flex items-center justify-center">
@@ -235,13 +235,13 @@ const Workers = () => {
                     </DrawerHeader>
                     <div className="text-black font-bold text-[17px]">
      <div className="flex flex-wrap items-center gap-4 justify-center pb-4">
-      <div className="flex items-center gap-2 flex-wrap">
+      {/* <div className="flex items-center gap-2 flex-wrap">
         <span className="text-primary text-[18px] capitalize">{`${maid.name} requires`}</span>
         <div className='flex flex-col md:flex-row gap-2'>
         <span className="ml-1 p-1 text-sm bg-secondary rounded-full text-center">{`$${maid.pricePerMonth} per Month`}</span>
         <span className="ml-1 p-1 text-sm bg-secondary rounded-full text-center">{`$${maid.pricePerHour} per Hour`}</span>
         </div>
-      </div>   
+      </div>    */}
 
       <div className="flex items-center gap-2 flex-wrap">
         <span className="text-primary text-[18px]">Speaks:</span>
